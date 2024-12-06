@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "build": {
+    "env": {
+      "VERCEL_CACHE": "false"
+    }
+  }
 }

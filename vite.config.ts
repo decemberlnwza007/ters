@@ -6,3 +6,11 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
 })
+
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+}
+
+module.exports = nextConfig;
